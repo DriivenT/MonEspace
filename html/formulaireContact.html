@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="icon" href="../images/favicon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/46f1bc7e24.js" crossorigin="anonymous"></script>
+        <title>Mon Espace</title>
+        <meta name="description" content="Portfolio de Tom Bretinière, Développeur Web">
+        <link href="../scss/style.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body id="body">
+        <header id="header">
+            <h1 id="title"><a href="../index.html">Mon Espace</a></h1>
+        </header>
+
+        <!-- Block footer -->
+        <form method="post" id="formContact">
+            <h2>Formulaire de contact</h2>
+            <div id="nomPrenom">
+                <div class="marginRight">
+                    <label for="nom"><i class="far fa-address-card"></i> Nom: *</label>
+                    <input type="text" name="nom" id="nom" minlength="2" maxlength="64" required>
+                </div>
+                <div>
+                    <label for="prenom"><i class="far fa-address-card"></i> Prénom: *</label>
+                    <input type="text" name="prenom" id="prenom" minlength="2" maxlength="32" required>
+                </div>
+            </div>
+        
+            <div id="emailNumTel">
+                <div class="marginRight">
+                    <label for="email"><i class="far fa-envelope"></i> Email: *</label>
+                    <input type="email" name="email" id="email" minlength="8" maxlength="128" required>
+                </div>
+                <div>
+                    <label for="numTel"><i class="fas fa-phone-alt"></i> N° Téléphone: </label>
+                    <input type="tel" name="numTel" id="numTel" minlength="10" maxlength="10">
+                </div>
+            </div>
+        
+            <div id="description">
+                <div>
+                    <label id="marginBottom" for="demandePerso"><i class="fas fa-pencil-alt"></i> Expliquez-moi votre demande:*</label>
+                    <textarea id="demandePerso" name="demandePerso" maxlength="500" wrap required></textarea>
+                </div>
+            </div>
+        
+            <input type="submit" value="Envoyer" class="button">
+        
+            <p class="precision">* Les champs possédant une astérisque sont obligatoires.</p>
+            <p class="precision">** Merci de renseigner une adresse mail valide, afin que je puisse vous recontacter.</p>
+        </form>
+
+        <footer id="stick">
+            <a href="https://www.linkedin.com/in/tom-bretinière/" target="_blank"><i class="fab fa-linkedin-in" title="Mon LinkedIn" alt="Logo LinkedIn et accès à mon profil"></i></a>
+            <a href="mailto:tom.bretiniere@gmail.com" target="_blank"><i class="far fa-envelope" title="Mon Email" alt="Logo de mail et accès à mon email"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100006359115985" target="_blank"><i class="fab fa-facebook" title="Mon Facebook" alt="Logo Facebook et accès à mon profil"></i></a>
+        </footer>
+        <!-- Fin Block footer -->
+
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="../js/formulaire.js"></script>
+    </body>
+</html>

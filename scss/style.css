@@ -1,0 +1,469 @@
+body {
+  margin: 0px;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+html, #body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#header {
+  background-color: #011E37;
+  box-shadow: 0px 1px 8px #011E37;
+}
+#header #title {
+  padding-bottom: 0.2em;
+  margin: 0px;
+  color: white;
+  font-size: 5em;
+  font-weight: bold;
+  text-shadow: 0px 1px 4px rgba(234, 242, 248, 0.8);
+  font-family: "Patrick Hand", cursive;
+}
+#header #title a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Block PRESENTATION */
+#me {
+  box-shadow: 0px 1px 8px #011E37;
+}
+#me img {
+  width: 350px;
+  max-width: 100%;
+}
+#me section {
+  margin-top: -5em;
+  color: white;
+  background-color: #011E37;
+  padding-bottom: 2em;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+#me section h2 {
+  font-size: 1.8em;
+  padding-top: 3em;
+  margin: 1em 25% 0px;
+}
+#me section p {
+  font-size: 1.5em;
+  margin: 1em 20% 1em;
+}
+#me section a {
+  text-decoration: none;
+  padding: 0.5em;
+  border: solid white 2px;
+  border-radius: 25px;
+  color: white;
+  font-size: 1.3em;
+  font-weight: bold;
+  background-color: #011E37;
+  transition: all 0.4s ease-out;
+}
+#me section a:hover,
+#me section a:focus {
+  background-color: white;
+  color: #011E37;
+  cursor: pointer;
+}
+
+#switch {
+  display: flex;
+  margin-top: 1.5em;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#switch button {
+  padding: 0.5em;
+  border: solid #011E37 2px;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #011E37;
+  background-color: white;
+  cursor: pointer;
+}
+#switch .active {
+  color: white;
+  background-color: #011E37;
+  transition: all ease-in;
+}
+#switch #button1 {
+  border-right: none;
+}
+
+#competences {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  margin: 0px 0.5em;
+}
+#competences section {
+  margin: 1em 0px 0px 0px;
+  border: solid #011E37 2px;
+  padding: 0em 1em;
+}
+#competences section ul {
+  padding: 0px;
+}
+#competences section li {
+  list-style: none;
+}
+#competences #frontend {
+  border-right: none;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+#competences #backend {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+#softskills {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  margin: 0px 0.5em;
+}
+#softskills section {
+  margin: 1em 0px 0px 0px;
+  border: solid #011E37 2px;
+  padding: 0em 1em;
+}
+#softskills section ul {
+  padding: 0px;
+}
+#softskills section li {
+  list-style: none;
+}
+#softskills #qualites {
+  border-right: none;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+#softskills #defauts {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+#realisation {
+  background-color: #011E37;
+  color: white;
+  margin-top: 2em;
+  padding: 0px 5em 4em;
+}
+#realisation h2 {
+  margin: 0px;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  font-size: 1.8em;
+}
+#realisation p {
+  font-size: 1.2em;
+  margin: 0px 15% 1em;
+}
+#realisation #flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0em 1em;
+}
+#realisation #flex section {
+  max-width: 435px;
+  max-height: 200px;
+  border: 1px solid white;
+  background-color: #011425;
+  border-radius: 25px;
+  margin: 0.8em;
+}
+#realisation #flex section figure {
+  position: relative;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+#realisation #flex section figure img {
+  width: inherit;
+  height: inherit;
+  border-radius: 25px;
+  transition: 0.45s ease-in-out;
+}
+#realisation #flex section figure figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+#realisation #flex section figure figcaption .margin {
+  margin-right: 0.4em;
+}
+#realisation #flex section figure figcaption #text {
+  margin: 1.5em 10% 0px;
+}
+#realisation #flex section figure figcaption a {
+  text-decoration: none;
+  padding: 0.5em;
+  border: solid white 2px;
+  border-radius: 25px;
+  color: white;
+  font-size: 1.3em;
+  font-weight: bold;
+  background-color: #011425;
+  transition: all 0.5s ease-out;
+}
+#realisation #flex section figure figcaption a:hover,
+#realisation #flex section figure figcaption a:focus {
+  background-color: white;
+  color: #011E37;
+  cursor: pointer;
+}
+#realisation #flex section figure figcaption:hover,
+#realisation #flex section figure figcaption:focus {
+  opacity: 1;
+}
+#realisation #flex section figure:hover img,
+#realisation #flex section figure:focus img {
+  opacity: 0;
+}
+
+#void {
+  height: 5em;
+  background-color: white;
+}
+
+form {
+  font-size: 1.5em;
+  color: white;
+  background-color: #011E37;
+  margin: 1em 15%;
+  padding: 1em 0px;
+  border-radius: 25px;
+  flex: 1 0 auto;
+}
+form #nomPrenom, form #emailNumTel, form #description {
+  display: flex;
+  justify-content: center;
+}
+form #nomPrenom .marginRight, form #emailNumTel .marginRight, form #description .marginRight {
+  margin-right: 3em;
+}
+form #nomPrenom label, form #emailNumTel label, form #description label {
+  text-align: left;
+  display: block;
+}
+form #nomPrenom #marginBottom, form #emailNumTel #marginBottom, form #description #marginBottom {
+  margin-bottom: 2px;
+}
+form #nomPrenom input, form #nomPrenom textarea, form #emailNumTel input, form #emailNumTel textarea, form #description input, form #description textarea {
+  font-size: 1em;
+  outline: none;
+  border: solid 1px #011E37;
+  border-radius: 0.3em;
+  box-shadow: 0px 0px 0px lightblue;
+  transition: box-shadow 0.3s;
+  margin-bottom: 1em;
+}
+form #nomPrenom textarea, form #emailNumTel textarea, form #description textarea {
+  height: 5em;
+  width: 35em;
+  max-width: 35em;
+}
+form #nomPrenom input:focus, form #nomPrenom textarea:focus, form #emailNumTel input:focus, form #emailNumTel textarea:focus, form #description input:focus, form #description textarea:focus {
+  box-shadow: 0px 0px 10px lightblue;
+}
+form #nomPrenom ::placeholder, form #emailNumTel ::placeholder, form #description ::placeholder {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+form #nomPrenom :focus::placeholder, form #emailNumTel :focus::placeholder, form #description :focus::placeholder {
+  opacity: 0;
+}
+form .button {
+  text-decoration: none;
+  padding: 0.7em;
+  border: solid white 2px;
+  border-radius: 1.5em;
+  color: white;
+  font-size: 0.9em;
+  font-weight: bold;
+  background-color: #011E37;
+  transition: all 0.4s ease-out;
+  margin-bottom: 0.5em;
+}
+form .button:hover,
+form .button:focus {
+  background-color: white;
+  color: #011E37;
+  cursor: pointer;
+}
+form .precision {
+  font-size: 0.7em;
+  font-style: italic;
+}
+
+footer {
+  background-color: #011E37;
+  padding: 1.5em 0px 1.5em;
+}
+footer article {
+  margin: -11em 25% 2em;
+  padding: 2.5em 1em;
+  font-size: 0.8em;
+  background-color: #011425;
+  border-radius: 2em;
+  color: white;
+}
+footer article #question {
+  margin-top: 0.3em;
+  padding: 0px 0.5em;
+  font-size: 1.9em;
+}
+footer article #contact {
+  text-decoration: none;
+  margin-bottom: 5em;
+  font-size: 1.8em;
+  padding: 0.5em;
+  border: solid white 2px;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  background-color: #011425;
+  transition: all 0.4s ease-out;
+}
+footer article #contact:hover,
+footer article #contact:focus {
+  background-color: white;
+  color: #011425;
+  cursor: pointer;
+}
+footer a {
+  color: white;
+  font-size: 2.5em;
+  padding: 0.4em;
+}
+footer a:focus {
+  outline: none;
+  border: 1px solid white;
+}
+footer i {
+  transition: all 0.5s ease-in-out;
+}
+footer i:hover,
+footer i:focus {
+  transform: scale(1.25);
+}
+
+#stick {
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 767px) {
+  #header #title {
+    font-size: 4em;
+  }
+
+  #me section h2 {
+    font-size: 1.5em;
+    margin: 1em 0px;
+  }
+  #me section p {
+    font-size: 1.2em;
+    margin: 1em 0px;
+  }
+
+  #switch #button1 {
+    border-right: solid #011E37 2px;
+    border-bottom: none;
+  }
+
+  #competences {
+    font-size: 1.2em;
+  }
+  #competences section {
+    padding: 0em 0.5em;
+  }
+
+  #softskills {
+    font-size: 1.3em;
+  }
+  #softskills section {
+    padding: 0em 0.7em;
+  }
+
+  #realisation {
+    padding: 0px 0em 4em;
+  }
+  #realisation p {
+    margin: 0px 0px 1em;
+  }
+  #realisation #flex {
+    padding: 0px;
+  }
+  #realisation #flex section figure figcaption #text {
+    font-size: 0.8em;
+    margin: 0px;
+  }
+  #realisation #flex section figure figcaption #text h3 {
+    margin: 0.5em 1em 0.5em;
+  }
+
+  footer article {
+    margin: -11em 3em 2em;
+  }
+  footer article p {
+    padding: 0px;
+    font-size: 1.5em;
+  }
+  footer article form {
+    font-size: 1.1em;
+  }
+  footer article form #nomPrenom, footer article form #emailNumTel, footer article form #description {
+    flex-direction: column;
+  }
+  footer article form #nomPrenom label, footer article form #emailNumTel label, footer article form #description label {
+    text-align: center;
+    margin-bottom: 2px;
+  }
+  footer article form #nomPrenom textarea, footer article form #emailNumTel textarea, footer article form #description textarea {
+    width: 15em;
+    max-width: 15em;
+  }
+  footer article form #nomPrenom .marginRight, footer article form #emailNumTel .marginRight, footer article form #description .marginRight {
+    margin-right: 0px;
+  }
+  footer input {
+    font-size: 0.5em;
+  }
+}
+@media (min-width: 767px) and (max-width: 1439px) {
+  footer article form #nomPrenom, footer article form #emailNumTel, footer article form #description {
+    flex-direction: column;
+  }
+  footer article form #nomPrenom label, footer article form #emailNumTel label, footer article form #description label {
+    text-align: center;
+    margin-bottom: 2px;
+  }
+  footer article form #nomPrenom textarea, footer article form #emailNumTel textarea, footer article form #description textarea {
+    width: 15em;
+    max-width: 15em;
+  }
+  footer article form #nomPrenom .marginRight, footer article form #emailNumTel .marginRight, footer article form #description .marginRight {
+    margin-right: 0px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

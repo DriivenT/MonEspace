@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="icon" href="images/favicon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/46f1bc7e24.js" crossorigin="anonymous"></script>
+        <title>Mon Espace</title>
+        <meta name="description" content="Portfolio de Tom Bretinière, Développeur Web">
+        <link href="scss/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header id="header">
+           <h1 id="title">Mon Espace</h1>
+        </header>
+
+        <!-- Block présentation -->
+        <article id="me">
+            <img src="./images/photoMoi.png" alt="Photo de moi">
+            <section id="presentation">
+                <h2>Bonjour et Bienvenue dans Mon Espace.<br />
+                    Je vous en prie, entrez et faites comme chez vous.</h2>
+                <p>Je me présente, je m'appelle <b>Tom</b>, j'ai 21 ans et vous êtes actuellement sur mon <b>Portfolio</b>.
+                    <b>Jeune Développeur Web et Web Mobile</b>, je pratique la programmation en autodidacte depuis de nombreuses
+                    années.
+                    J'ai obtenu en 2021 mon <b>diplôme de Développeur Web inscrit au RNCP</b>.<br />
+                    <b>Motivation, Détermination et Rigueur</b> sont mes maitres mots.
+                </p>
+                <a href="./autres/CV Tom Bretiniere.pdf" target="_blank">Voir mon CV</a>
+            </section>
+        </article>
+        <!-- Fin Block présentation -->
+
+        <div id="switch">
+            <button type="button" id="button1" class="active">Compétences</button>
+            <button type="button" id="button2">Qualités / Défauts</button>
+        </div>
+        
+        <article id="competences">
+            <section id="frontend">
+                <h3><u>Front-End:</u></h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Responsive Design</li>
+                    <li>Bootstrap</li>
+                    <li>SEO</li>
+                    <li>Sass</li>
+                    <li>VueJS</li>
+                </ul>
+            </section>
+            <section id="backend">
+                <h3><u>Back-End:</u></h3>
+                <ul>
+                    <li>Javascript</li>
+                    <li>NodeJS</li>
+                    <li>ExpressJS</li>
+                    <li>API REST</li>
+                    <li>MongoDB</li>
+                    <li>MySQL</li>
+                </ul>
+            </section>
+        </article>
+
+        <article id="softskills">
+            <section id="qualites" class="hidden">
+                <h3><u>Qualités:</u></h3>
+                <ul>
+                    <li>Adaptable</li>
+                    <li>Persévérant</li>
+                    <li>Rigoureux</li>
+                    <li>Pondéré</li>
+                    <li>Attentif</li>
+                    <li>Autonome</li>
+                    <li>Curieux</li>
+                </ul>
+            </section>
+            <section id="defauts" class="hidden">
+                <h3><u>Défauts:</u></h3>
+                <ul>
+                    <li>Obstiné</li>
+                    <li>Impatient</li>
+                    <li>Méfiant</li>
+                    <li>Maniaque</li>
+                    <li>Prudent</li>
+                    <li>Débutant</li>
+                </ul>
+            </section>
+        </article>
+        
+        <!-- Block Réalisation -->
+        <article id="realisation">
+            <h2><u>Mes Réalisations</u></h2>
+            <p>Ici, vous trouverez tous les projets sur lesquels j'ai travaillé.
+                Vous n'aurez pas accès au site pour certains tout simplement car je n'ai pas la possibilité de les héberger.
+                Malgré tous, ils possèdent tous un repository incluant un readme fournissant des informations à leurs sujets
+                ou expliquant comment les installer sur votre propre machine.</p>
+            <div id="flex">
+                <!-- Projet 3 -->
+                <section>
+                    <figure>
+                        <img src="./images/ohmyfood_logo.jpg" alt="Logo OhMyFood" />
+                        <figcaption>
+                            <div id="text">
+                                <h3>Projet 3 de ma formation de Développeur Web.
+                                    Reproduction de maquettes Photoshop fournit, en HTML / CSS et ajout d'animation.
+                                </h3>
+                                <a href="https://github.com/DriivenT/P3_OC" class="margin" target="_blank">Github</a>
+                                <a href="https://driivent.github.io/P3_OC/index.html" target="_blank">Visitez le site ></a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </section>
+        
+                <!-- Projet 4 -->
+                <section>
+                    <figure>
+                        <img src="./images/la_chouette_agence_logo.jpg" alt="Logo de La Chouette Agence" />
+                        <figcaption>
+                            <div id="text">
+                                <h3>Projet 4 de ma formation. Optimisation du référencement et des performances d'un site web.
+                                </h3>
+                                <a href="https://github.com/DriivenT/P4_OCbis" class="margin" target="_blank">Github</a>
+                                <a href="https://driivent.github.io/P4_OCbis/" target="_blank">Visitez le site ></a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </section>
+        
+                <!-- Projet 5 -->
+                <section>
+                    <figure>
+                        <img src="./images/orinoco_logo.jpg" alt="Logo Orinoco" />
+                        <figcaption>
+                            <div id="text">
+                                <h3>Projet 5 de ma formation. Construction du front-end d'un site E-commerce grâce à un back-end
+                                    fournit.</h3>
+                                <a href="https://github.com/DriivenT/P5_OC" class="margin" target="_blank">Github</a>
+                                <a href="https://driivent.github.io/P5_OC/" target="_blank">Visitez le site ></a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </section>
+        
+                <!-- Projet 6 -->
+                <section>
+                    <figure>
+                        <img src="./images/so_pekocko_logo.jpg" alt="Logo So Pekocko" />
+                        <figcaption>
+                            <div id="text">
+                                <h3>Projet 6 de ma formation. Inverse du Projet 5, Construction du back-end (API) pour un
+                                    Front-End fournit.</h3>
+                                <a href="https://github.com/DriivenT/P6" class="margin" target="_blank">Github</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </section>
+        
+                <!-- Projet 7 -->
+                <section>
+                    <figure>
+                        <img src="./images/groupomania_logo.jpg" alt="Logo Groupomania" />
+                        <figcaption>
+                            <div id="text">
+                                <h3>Projet 7 de ma formation, le dernier. Développement d'un réseau social d'entreprise complet.
+                                </h3>
+                                <a href="https://github.com/DriivenT/P7_Openclassroom" id="margin" target="_blank">Github</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </section>
+            </div>
+        </article>
+        <!-- Fin block réalisation -->
+        
+        <div id="void"></div>
+
+        <!-- Block footer -->
+        <footer>
+            <article>
+                <p id="question">Une question ? Une demande particulière ?</p>
+                <a href="html/formulaireContact.html" id="contact">Contactez-moi</a> 
+            </article>
+
+            <a href="https://www.linkedin.com/in/tom-bretinière/" target="_blank"><i class="fab fa-linkedin-in" title="Mon LinkedIn" alt="Logo LinkedIn et accès à mon profil"></i></a>
+            <a href="mailto:tom.bretiniere@gmail.com" target="_blank"><i class="far fa-envelope" title="Mon Email" alt="Logo de mail et accès à mon email"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100006359115985" target="_blank"><i class="fab fa-facebook" title="Mon Facebook" alt="Logo Facebook et accès à mon profil"></i></a>
+        </footer>
+        <!-- Fin Block footer -->
+
+        <script src="js/switch.js"></script>
+    </body>
+</html>
