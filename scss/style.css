@@ -211,7 +211,7 @@ html, #body {
 #realisation #flex section figure figcaption .margin {
   margin-right: 0.4em;
 }
-#realisation #flex section figure figcaption #text {
+#realisation #flex section figure figcaption .text {
   margin: 1.5em 10% 0px;
 }
 #realisation #flex section figure figcaption a {
@@ -385,9 +385,18 @@ footer i:focus {
     margin: 1em 0px;
   }
 
+  #switch {
+    flex-direction: column;
+  }
   #switch #button1 {
     border-right: solid #011E37 2px;
     border-bottom: none;
+    margin-right: 25%;
+    margin-left: 25%;
+  }
+  #switch #button2 {
+    margin-right: 15%;
+    margin-left: 15%;
   }
 
   #competences {
@@ -413,11 +422,11 @@ footer i:focus {
   #realisation #flex {
     padding: 0px;
   }
-  #realisation #flex section figure figcaption #text {
+  #realisation #flex section figure figcaption .text {
     font-size: 0.8em;
     margin: 0px;
   }
-  #realisation #flex section figure figcaption #text h3 {
+  #realisation #flex section figure figcaption .text h3 {
     margin: 0.5em 1em 0.5em;
   }
 
@@ -428,40 +437,39 @@ footer i:focus {
     padding: 0px;
     font-size: 1.5em;
   }
-  footer article form {
+
+  form {
     font-size: 1.1em;
+    margin: 1em 1%;
   }
-  footer article form #nomPrenom, footer article form #emailNumTel, footer article form #description {
+  form #nomPrenom, form #emailNumTel, form #description {
     flex-direction: column;
   }
-  footer article form #nomPrenom label, footer article form #emailNumTel label, footer article form #description label {
+  form #nomPrenom label, form #emailNumTel label, form #description label {
     text-align: center;
     margin-bottom: 2px;
   }
-  footer article form #nomPrenom textarea, footer article form #emailNumTel textarea, footer article form #description textarea {
+  form #nomPrenom textarea, form #emailNumTel textarea, form #description textarea {
     width: 15em;
     max-width: 15em;
   }
-  footer article form #nomPrenom .marginRight, footer article form #emailNumTel .marginRight, footer article form #description .marginRight {
+  form #nomPrenom .marginRight, form #emailNumTel .marginRight, form #description .marginRight {
     margin-right: 0px;
-  }
-  footer input {
-    font-size: 0.5em;
   }
 }
 @media (min-width: 767px) and (max-width: 1439px) {
-  footer article form #nomPrenom, footer article form #emailNumTel, footer article form #description {
+  form #nomPrenom, form #emailNumTel, form #description {
     flex-direction: column;
   }
-  footer article form #nomPrenom label, footer article form #emailNumTel label, footer article form #description label {
+  form #nomPrenom label, form #emailNumTel label, form #description label {
     text-align: center;
     margin-bottom: 2px;
   }
-  footer article form #nomPrenom textarea, footer article form #emailNumTel textarea, footer article form #description textarea {
+  form #nomPrenom textarea, form #emailNumTel textarea, form #description textarea {
     width: 15em;
     max-width: 15em;
   }
-  footer article form #nomPrenom .marginRight, footer article form #emailNumTel .marginRight, footer article form #description .marginRight {
+  form #nomPrenom .marginRight, form #emailNumTel .marginRight, form #description .marginRight {
     margin-right: 0px;
   }
 }
